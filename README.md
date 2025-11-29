@@ -264,3 +264,31 @@ Glucose is likely the strongest predictive feature for diabetes.
 Higher glucose values are directly associated with diabetes risk.
 
 For modeling, this feature is highly informative, but due to overlap in the borderline range, other features should also be considered.
+
+BMI , Density Plot by Outcome
+
+<img width="1006" height="618" alt="Screenshot 2025-11-30 002753" src="https://github.com/user-attachments/assets/ca327f54-962f-425c-a1db-3cf6b291ed83" />
+
+This Kernel Density Estimate (KDE) plot shows the distribution of BMI (Body Mass Index) based on Outcome (diabetes diagnosis):
+
+Outcome = 0 (Non-diabetic) — Blue
+Distribution is concentrated around 29–30 (overweight to class 1 obesity) and relatively symmetric.
+
+Outcome = 1 (Diabetic) — Orange
+Distribution is shifted toward higher values with a peak around 33–34 (obesity). Right skewness is present with a long tail toward very high BMI.
+
+Key observations:
+
+Overlap: 25–35 range shows substantial overlap between groups.
+
+Separability: BMI < 25 → low diabetes probability, BMI > 35 → high diabetes probability.
+
+Zero values: Attention to zero/invalid values is necessary; assume invalid values were handled before plotting
+
+Conclusion / Insight:
+
+BMI is an important risk factor for diabetes; mean BMI is higher in the diabetic group.
+
+BMI is a strong predictor, but not as strong as Glucose or Insulin.
+
+For modeling, BMI should be used alongside other features.
