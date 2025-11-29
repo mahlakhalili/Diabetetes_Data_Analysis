@@ -209,5 +209,32 @@ Right skew indicates notable cases with high glucose levels.
 
 For models sensitive to normality, log transformation or normalization may be considered for this feature.
 
+Insulin — Dual Density Plot (KDE by Outcome)
+
+<img width="935" height="534" alt="Screenshot 2025-11-29 235547" src="https://github.com/user-attachments/assets/94c7a727-1f9e-4bb7-b14e-ffc8ef4cea86" />
+
+A Kernel Density Estimate (KDE) plot was created for Insulin levels based on the target variable Outcome:
+
+Outcome = 0 (Non-diabetic) — Blue
+Distribution is concentrated at lower values (peak ~80–90) and relatively sharp, indicating a higher density of samples in the lower range.
+
+Outcome = 1 (Diabetic) — Orange
+Distribution is concentrated at higher values (peak ~150–170) and more spread out.
+
+Key observations:
+
+Separability: Values below 100 mainly belong to non-diabetic patients, and values above 150 mainly belong to diabetic patients.
+
+Overlap: The ~100–180 range indicates cases where insulin alone cannot clearly distinguish diabetes; other features should be considered.
+
+Zero values: Attention should be paid to zero (missing/invalid) values, as the blue peak may partly reflect them.
+
+Conclusion / Insight:
+
+Insulin is a strong feature for differentiating diabetic and non-diabetic patients.
+
+Samples in the overlap region require additional features (Glucose, BMI, Age) for accurate classification.
+
+For modeling, this feature should be included along with other key variables, and zero values should be cleaned or imputed.
 
 
