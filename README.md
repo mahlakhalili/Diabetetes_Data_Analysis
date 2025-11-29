@@ -237,4 +237,30 @@ Samples in the overlap region require additional features (Glucose, BMI, Age) fo
 
 For modeling, this feature should be included along with other key variables, and zero values should be cleaned or imputed.
 
+Glucose , Density Plot by Outcome
 
+<img width="967" height="546" alt="Screenshot 2025-11-30 001445" src="https://github.com/user-attachments/assets/d5ba2bef-886a-464a-aef5-abf1ae85c116" />
+
+This Kernel Density Estimate (KDE) plot shows the distribution of Glucose (plasma glucose concentration) based on Outcome (diabetes diagnosis):
+
+Outcome = 0 (Non-diabetic) — Blue
+Distribution is concentrated around normal values (~100) and is relatively symmetric.
+
+Outcome = 1 (Diabetic) — Orange
+Distribution is shifted toward higher values (peak ~130–140) with right skewness, indicating the presence of high glucose cases.
+
+Key observations:
+
+Overlap: ~100–120 range shows partial overlap between the two groups.
+
+Separability: Values above 125–130 mostly belong to the diabetic group.
+
+Diagnostic threshold: Around 120, where the density of Outcome=1 surpasses Outcome=0, can be considered as an approximate boundary.
+
+Conclusion / Insight:
+
+Glucose is likely the strongest predictive feature for diabetes.
+
+Higher glucose values are directly associated with diabetes risk.
+
+For modeling, this feature is highly informative, but due to overlap in the borderline range, other features should also be considered.
