@@ -177,6 +177,8 @@ Statistical metrics provided a clear picture of feature distributions.
 
 Class imbalance was confirmed.
 
+Step 4 , Data Visualization
+
 In this step we visually explored the cleaned dataset using Matplotlib . The goal of visualization was to understand feature distributions, detect bivariate relationships, and extract actionable insights for further analysis and modeling.
 
 Grouping helped reveal meaningful patterns such as higher diabetes rates in obese individuals and older age groups.
