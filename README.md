@@ -177,9 +177,11 @@ Statistical metrics provided a clear picture of feature distributions.
 
 Class imbalance was confirmed.
 
+In this step we visually explored the cleaned dataset using Matplotlib . The goal of visualization was to understand feature distributions, detect bivariate relationships, and extract actionable insights for further analysis and modeling.
+
 Grouping helped reveal meaningful patterns such as higher diabetes rates in obese individuals and older age groups.
 
-
+Each figure contains a short title, a description of plotted data, a few key insights, and suggestions for next steps. Visuals include histograms, boxplots, density plot , countplots for the target, scatterplots, line plot , bar plot , pie plot and a correlation heatmap.
 
 
 
