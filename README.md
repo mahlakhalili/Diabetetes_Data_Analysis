@@ -209,7 +209,7 @@ Right skew indicates notable cases with high glucose levels.
 
 For models sensitive to normality, log transformation or normalization may be considered for this feature.
 
-Insulin — Dual Density Plot (KDE by Outcome)
+Insulin , Dual Density Plot (KDE by Outcome)
 
 <img width="935" height="534" alt="Screenshot 2025-11-29 235547" src="https://github.com/user-attachments/assets/94c7a727-1f9e-4bb7-b14e-ffc8ef4cea86" />
 
