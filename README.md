@@ -185,9 +185,29 @@ Grouping helped reveal meaningful patterns such as higher diabetes rates in obes
 
 Each figure contains a short title, a description of plotted data, a few key insights, and suggestions for next steps. Visuals include histograms, boxplots, density plot , countplots for the target, scatterplots, line plot , bar plot , pie plot and a correlation heatmap.
 
-Glucose — Density Plot (KDE)
+Glucose , Density Plot (KDE)
 
 <img width="824" height="534" alt="Screenshot 2025-11-29 230036" src="https://github.com/user-attachments/assets/abf781a0-d7e1-434e-a178-aadc770b683b" />
+
+The Kernel Density Estimate (KDE) plot was used to examine the distribution of Glucose values in the Pima Indians dataset.
+
+Key observations:
+
+Mode: ~100–110, the most frequent glucose level in the dataset.
+
+Skewness: Right-skewed; higher glucose values are less frequent but significant.
+
+Range: Most observations are concentrated between 75–150.
+
+Outliers: Very high glucose values (>200) exist but are rare.
+
+Conclusion / Insight:
+
+Glucose is a key feature for diabetes prediction.
+
+Right skew indicates notable cases with high glucose levels.
+
+For models sensitive to normality, log transformation or normalization may be considered for this feature.
 
 
 
