@@ -2,6 +2,8 @@ This project is an Exploratory Data Analysis (EDA) on the famous Pima Indians Di
 
  link :https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database
 
+Step 1 Summary , Real Dataset Information
+
 🔍 Dataset Understanding & Initial Inspection (Real Values)
 
 Rows & Columns:
@@ -51,6 +53,47 @@ Glucose, BMI, and Age appear to be the strongest early indicators.
 Insulin contains many zeros and may need imputation.
 
 Dataset requires cleaning before analysis.
+
+Step 2 — Data Cleaning
+
+🧼 1. Identifying Invalid Zero Values
+
+Several features contained biologically impossible zeros:
+
+Glucose → 5 zeros
+
+BloodPressure → 35 zeros
+
+SkinThickness → 227 zeros
+
+Insulin → 374 zeros
+
+BMI → 11 zeros
+
+These were treated as invalid values.
+
+🔧 2. Replacing Invalid Values
+
+All invalid zeros were replaced using the median of each respective column.
+Median was chosen to avoid distortion from outliers and preserve natural distribution.
+
+After replacement:
+
+No unrealistic zero values remained
+
+Distributions became smoother and more reliable
+
+🧹 3. Outlier Check
+
+Outliers were reviewed but not aggressively removed, as EDA benefits from analyzing the natural variability of the data.
+
+🔍 4. Final Validation
+
+After cleaning:
+
+No missing or invalid values remained
+
+Dataset became ready for visualization and deeper analysis
 
 
 
