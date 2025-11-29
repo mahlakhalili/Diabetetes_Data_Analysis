@@ -95,6 +95,89 @@ No missing or invalid values remained
 
 Dataset became ready for visualization and deeper analysis
 
+Step 3 — Statistical Analysis, Calculations & Feature Grouping
+
+In this step, after data cleaning, detailed statistical analysis and feature grouping were performed to better understand the dataset’s behavior.
+
+🧮 1. Descriptive Statistics
+
+For all features, the following metrics were calculated:
+
+Mean
+
+Median
+
+Min / Max
+
+Standard Deviation
+
+Quartiles (Q1, Q3)
+
+IQR
+
+🔑 Key Real Results:
+
+Mean Glucose ≈ 120.9
+
+Mean BMI ≈ 31.99
+
+Mean Age ≈ 33.24
+
+Max Pregnancies = 17
+
+These stats revealed which features have high variability (Glucose, BMI, Age) and which are more stable.
+
+📊 2. Target Distribution
+
+Actual class distribution:
+
+0 → 65.1% (Non-diabetic)
+
+1 → 34.9% (Diabetic)
+
+Indicating that the dataset is imbalanced.
+
+🗂 3. Feature Grouping (Binning)
+
+Several numeric features were grouped for clearer insights.
+
+● Age Groups:
+
+20–29 → Young
+
+30–39 → Adult
+
+40–49 → Middle-aged
+
+50+ → Senior
+
+● BMI Categories:
+
+< 18.5 → Underweight
+
+18.5–24.9 → Normal
+
+25–29.9 → Overweight
+
+≥ 30 → Obese
+
+● Pregnancies Groups:
+
+0–2 → Low
+
+3–5 → Medium
+
+6+ → High
+
+Grouping made it easier to observe patterns in diabetes prevalence across age, BMI, and pregnancy counts.
+
+🧠 Summary of Step 3
+
+Statistical metrics provided a clear picture of feature distributions.
+
+Class imbalance was confirmed.
+
+Grouping helped reveal meaningful patterns such as higher diabetes rates in obese individuals and older age groups.
 
 
 
