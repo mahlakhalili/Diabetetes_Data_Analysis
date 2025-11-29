@@ -1,6 +1,5 @@
-این پروژه یک آنالیز اکتشافی داده‌ (EDA) روی دیتاست معروف Pima Indians Diabetes است که شامل اطلاعات پزشکی زنان ۲۱ سال به بالا از قبیله Pima است و هدف آن بررسی الگوهای مرتبط با دیابت می‌باشد.
-
- لینک مجموعه داده:https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database
+This project is an Exploratory Data Analysis (EDA) on the famous Pima Indians Diabetes dataset. It includes medical information for Pima women aged 21 and older, and its goal is to explore patterns associated with diabetes.
+ link :https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database
 
 
 
