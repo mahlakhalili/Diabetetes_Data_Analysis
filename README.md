@@ -185,5 +185,9 @@ Grouping helped reveal meaningful patterns such as higher diabetes rates in obes
 
 Each figure contains a short title, a description of plotted data, a few key insights, and suggestions for next steps. Visuals include histograms, boxplots, density plot , countplots for the target, scatterplots, line plot , bar plot , pie plot and a correlation heatmap.
 
+Glucose — Density Plot (KDE)
+
+<img width="824" height="534" alt="Screenshot 2025-11-29 230036" src="https://github.com/user-attachments/assets/abf781a0-d7e1-434e-a178-aadc770b683b" />
+
 
 
