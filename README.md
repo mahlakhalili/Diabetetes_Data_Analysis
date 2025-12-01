@@ -292,3 +292,19 @@ BMI is an important risk factor for diabetes; mean BMI is higher in the diabetic
 BMI is a strong predictor, but not as strong as Glucose or Insulin.
 
 For modeling, BMI should be used alongside other features.
+
+Outcome , Bar Plot (Target Variable Distribution)
+
+<img width="557" height="448" alt="Screenshot 2025-12-01 135624" src="https://github.com/user-attachments/assets/6a4f9981-9b5b-4763-9ff1-7f671e14bd3b" />
+
+This bar plot shows the distribution of the Outcome variable in the Pima Indians Diabetes dataset. This visualization is crucial for understanding the presence of class imbalance in the data.
+
+Key Observations
+
+Outcome = 0 (Non-Diabetic): ~500 samples
+
+Outcome = 1 (Diabetic): ~268 samples
+
+Total observations: ~768
+
+This means that the non-diabetic class has almost twice as many samples as the diabetic class.
