@@ -185,7 +185,7 @@ Grouping helped reveal meaningful patterns such as higher diabetes rates in obes
 
 Each figure contains a short title, a description of plotted data, a few key insights, and suggestions for next steps. Visuals include histograms, boxplots, density plot , countplots for the target, scatterplots, line plot , bar plot , pie plot and a correlation heatmap.
 
-Glucose , Density Plot (KDE)
+📊Glucose , Density Plot (KDE)
 
 <img width="824" height="534" alt="Screenshot 2025-11-29 230036" src="https://github.com/user-attachments/assets/abf781a0-d7e1-434e-a178-aadc770b683b" />
 
@@ -209,7 +209,7 @@ Right skew indicates notable cases with high glucose levels.
 
 For models sensitive to normality, log transformation or normalization may be considered for this feature.
 
-Insulin , Dual Density Plot (KDE by Outcome)
+📊Insulin , Dual Density Plot (KDE by Outcome)
 
 <img width="935" height="534" alt="Screenshot 2025-11-29 235547" src="https://github.com/user-attachments/assets/94c7a727-1f9e-4bb7-b14e-ffc8ef4cea86" />
 
@@ -237,7 +237,7 @@ Samples in the overlap region require additional features (Glucose, BMI, Age) fo
 
 For modeling, this feature should be included along with other key variables, and zero values should be cleaned or imputed.
 
-Glucose , Density Plot by Outcome
+📊Glucose , Density Plot by Outcome
 
 <img width="967" height="546" alt="Screenshot 2025-11-30 001445" src="https://github.com/user-attachments/assets/d5ba2bef-886a-464a-aef5-abf1ae85c116" />
 
@@ -265,7 +265,7 @@ Higher glucose values are directly associated with diabetes risk.
 
 For modeling, this feature is highly informative, but due to overlap in the borderline range, other features should also be considered.
 
-BMI , Density Plot by Outcome
+📊BMI , Density Plot by Outcome
 
 <img width="1006" height="618" alt="Screenshot 2025-11-30 002753" src="https://github.com/user-attachments/assets/ca327f54-962f-425c-a1db-3cf6b291ed83" />
 
@@ -293,7 +293,7 @@ BMI is a strong predictor, but not as strong as Glucose or Insulin.
 
 For modeling, BMI should be used alongside other features.
 
-Outcome , Bar Plot (Target Variable Distribution)
+📊Outcome , Bar Plot (Target Variable Distribution)
 
 <img width="557" height="448" alt="Screenshot 2025-12-01 135624" src="https://github.com/user-attachments/assets/6a4f9981-9b5b-4763-9ff1-7f671e14bd3b" />
 
@@ -309,7 +309,7 @@ Total observations: ~768
 
 This means that the non-diabetic class has almost twice as many samples as the diabetic class.
 
-Analysis of Average Glucose by Outcome
+📊Analysis of Average Glucose by Outcome
 
 <img width="661" height="441" alt="Screenshot 2025-12-01 142537" src="https://github.com/user-attachments/assets/33fef361-f505-4299-a7ce-495be22d8783" />
 
@@ -331,7 +331,7 @@ Conclusion
 This clear difference confirms that Glucose is a strong predictive feature for diabetes in this dataset.
 These findings are also consistent with earlier visualizations such as the Glucose KDE plot, where the distribution for diabetic patients shifted noticeably toward higher values.
 
-Analysis of Average BMI by Outcome
+📊Analysis of Average BMI by Outcome
 
 <img width="638" height="448" alt="Screenshot 2025-12-01 143749" src="https://github.com/user-attachments/assets/c5135ccc-8257-4c28-951d-9ba6031414a8" />
 
@@ -353,7 +353,7 @@ Conclusion
 This visualization clearly confirms the strong link between higher BMI and increased likelihood of diabetes in this dataset.
 These findings align with previous visual analyses, such as the BMI KDE plot, where the distribution for diabetic patients was shifted toward higher BMI values.
 
-Analysis of Average Insulin by Outcome
+📊Analysis of Average Insulin by Outcome
 
 <img width="665" height="448" alt="Screenshot 2025-12-01 150533" src="https://github.com/user-attachments/assets/04ad3aa4-3b6a-43a1-a208-3d0ad92c6305" />
 
@@ -381,7 +381,7 @@ Insulin resistance
 Hyperinsulinemia
 These factors are commonly associated with or precede Type 2 diabetes, supporting the significance of this feature in further modeling and analysis.
 
-Scatter Plot Analysis: Glucose vs. BMI by Outcome
+📊Scatter Plot Analysis: Glucose vs. BMI by Outcome
 
 <img width="811" height="521" alt="Screenshot 2025-12-01 182712" src="https://github.com/user-attachments/assets/50719648-254b-4b45-9341-e80a6e70736a" />
 
@@ -420,7 +420,7 @@ Together, these features help machine learning models draw a meaningful decision
 Feature Engineering Potential:
 This visualization suggests the possibility of creating new engineered features, such as a combined metabolic risk index, to enhance model performance.
 
-Scatter plot , Glucose vs Age colored by Outcome
+📊Scatter plot , Glucose vs Age colored by Outcome
 
 <img width="838" height="536" alt="Screenshot 2025-12-01 183121" src="https://github.com/user-attachments/assets/7303a8bc-e314-4eb5-bae6-b1a8458953d7" />
 
@@ -448,7 +448,7 @@ Modeling use: Consider modeling interaction terms (e.g., Age * Glucose) or age-s
 
 Practical suggestion: Use the scatter insights to engineer features or to set stratified decision thresholds in downstream models.
 
-Scatter Plot: BMI vs Age (Colored by Outcome)
+📊Scatter Plot: BMI vs Age (Colored by Outcome)
 
 <img width="684" height="520" alt="Screenshot 2025-12-01 194211" src="https://github.com/user-attachments/assets/6e5be2e0-5bc9-4011-bee6-8fb2ee4dd9b4" />
 
@@ -476,7 +476,7 @@ Conclusion
 
 There is no strong linear correlation between Age and BMI, but both variables independently contribute to diabetes risk. Their combined interaction strengthens the predictive signal, making them valuable inputs for machine learning models. However, for better class separation, additional metabolic features (e.g., Glucose, Insulin) are necessary.
 
-Scatter Plot: Insulin vs Glucose (Colored by Outcome)
+📊Scatter Plot: Insulin vs Glucose (Colored by Outcome)
 
 <img width="825" height="533" alt="Screenshot 2025-12-01 195133" src="https://github.com/user-attachments/assets/c37b863d-af4d-47f0-9dd8-c4f63526bebd" />
 
@@ -503,7 +503,7 @@ Conclusion
 
 The combination of Glucose and Insulin provides one of the strongest two-dimensional separations in the dataset. A machine learning model can form an effective decision boundary using only these two features, and they are expected to carry significant weight in predictive models for diabetes.
 
-Scatter Plot: BloodPressure vs Age (Colored by Outcome)
+📊Scatter Plot: BloodPressure vs Age (Colored by Outcome)
 
 <img width="864" height="539" alt="Screenshot 2025-12-01 210852" src="https://github.com/user-attachments/assets/8a492cdf-8464-40f7-810d-ca9a79787098" />
 
@@ -541,7 +541,7 @@ Low model weight: Machine learning models will likely assign low importance to t
 
 Interpretation: Diastolic blood pressure in this dataset appears to be only weakly associated with diabetes diagnosis.
 
-Analysis of Mean Glucose Level by Diabetes Outcome
+📊Analysis of Mean Glucose Level by Diabetes Outcome
 
 <img width="675" height="425" alt="Screenshot 2025-12-01 211233" src="https://github.com/user-attachments/assets/d8a4afc0-9221-4dd9-8be3-ac56fdced606" />
 
@@ -580,3 +580,48 @@ This observation is consistent with the Glucose KDE plot, where the diabetic gro
 Modeling importance:
 Machine learning models are expected to assign high importance to this feature, given the strong difference in group means.
 
+📊Analysis of Class Distribution (Outcome Counts)
+
+<img width="699" height="432" alt="Screenshot 2025-12-01 220047" src="https://github.com/user-attachments/assets/77e60d8b-dbab-4e43-9773-5ba781eb3480" />
+
+This is a simple bar plot that shows the count of each target class (Outcome), clearly highlighting the class imbalance in the dataset.
+
+1. Nature of the Chart & Feature
+
+Feature analyzed: Outcome (target variable, diabetes diagnosis)
+
+Meaning of values:
+
+Non-Diabetic (0): Patients without diabetes
+
+Diabetic (1): Patients with diabetes
+
+Y-axis: Count of observations in each class
+
+2. Key Observations & Class Distribution
+
+Non-Diabetic (Class 0): 500 patients
+
+Diabetic (Class 1): 268 patients
+
+Total observations: 
+500
++
+268
+=
+768
+500+268=768
+
+Class imbalance:
+
+Majority Class: Non-Diabetic (0)
+
+Minority Class: Diabetic (1)
+
+Ratio ≈ 500:268 (~65% to 35%) indicates a moderate imbalance in class distribution
+
+3. Conclusion & Modeling Implications
+
+Models trained on this dataset should consider class imbalance to avoid bias toward the majority class.
+
+Techniques such as resampling (oversampling/undersampling) or class-weight adjustments may help improve predictive performance for the minority class.
