@@ -353,4 +353,31 @@ Conclusion
 This visualization clearly confirms the strong link between higher BMI and increased likelihood of diabetes in this dataset.
 These findings align with previous visual analyses, such as the BMI KDE plot, where the distribution for diabetic patients was shifted toward higher BMI values.
 
+Analysis of Average Insulin by Outcome
+
+<img width="665" height="448" alt="Screenshot 2025-12-01 150533" src="https://github.com/user-attachments/assets/04ad3aa4-3b6a-43a1-a208-3d0ad92c6305" />
+
+This bar plot compares the average serum insulin levels between diabetic and non-diabetic patients. It provides a quantitative view of how insulin levels vary across the two classes of the target variable (Outcome).
+
+Key Observations
+
+Average Insulin for Non-Diabetic patients (Outcome = 0):
+Approximately 125 units.
+
+Average Insulin for Diabetic patients (Outcome = 1):
+Approximately 185 units.
+
+Significant difference:
+Diabetic individuals have, on average, about 60 units higher insulin levels compared to non-diabetic individuals.
+
+Conclusion and Importance
+
+The plot highlights Insulin as a strong predictive and discriminative feature in the dataset.
+
+The noticeable difference between the two groups aligns with known physiological concepts such as:
+
+Insulin resistance
+
+Hyperinsulinemia
+These factors are commonly associated with or precede Type 2 diabetes, supporting the significance of this feature in further modeling and analysis.
 
