@@ -413,9 +413,38 @@ Conclusion
 Positive Correlation:
 Higher BMI tends to be associated with higher glucose levels.
 
+
 Strong Combined Predictive Power:
 Together, these features help machine learning models draw a meaningful decision boundary between classes.
 
 Feature Engineering Potential:
 This visualization suggests the possibility of creating new engineered features, such as a combined metabolic risk index, to enhance model performance.
+
+Scatter plot , Glucose vs Age colored by Outcome
+
+<img width="838" height="536" alt="Screenshot 2025-12-01 183121" src="https://github.com/user-attachments/assets/7303a8bc-e314-4eb5-bae6-b1a8458953d7" />
+
+The scatter plot visualizes the joint relationship between Glucose (blood sugar) and Age, with points colored by Outcome (blue = non-diabetic, orange = diabetic). This view helps assess how age and glucose together relate to diabetes risk.
+
+Key observations
+
+Glucose strong across ages: Diabetic points (orange) consistently occupy higher glucose values across all ages—Glucose is a strong independent predictor.
+
+Risk increases with age: The density of diabetic points rises with age, particularly after ~40 years.
+
+Overlap region: Approximate overlap around Glucose ≈ 90–140 and Age ≈ 25–45 where class separation is unclear using only these two features.
+
+Relatively clear zones:
+
+Low-risk: Age < 35 and Glucose < 120 → mostly non-diabetic.
+
+High-risk: Age > 50 and Glucose > 160 → mostly diabetic.
+
+Conclusion & modeling implications
+
+Interactive effect: Age alone is weaker, but combined with Glucose it amplifies diabetes risk — “high Glucose + older age” is a notably strong signal.
+
+Modeling use: Consider modeling interaction terms (e.g., Age * Glucose) or age-stratified thresholds to improve classifier performance.
+
+Practical suggestion: Use the scatter insights to engineer features or to set stratified decision thresholds in downstream models.
 
