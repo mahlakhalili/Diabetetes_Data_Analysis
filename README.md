@@ -502,3 +502,42 @@ Insulin values of zero often indicate missing data in the original dataset. The 
 Conclusion
 
 The combination of Glucose and Insulin provides one of the strongest two-dimensional separations in the dataset. A machine learning model can form an effective decision boundary using only these two features, and they are expected to carry significant weight in predictive models for diabetes.
+
+Scatter Plot: BloodPressure vs Age (Colored by Outcome)
+
+<img width="864" height="539" alt="Screenshot 2025-12-01 210852" src="https://github.com/user-attachments/assets/8a492cdf-8464-40f7-810d-ca9a79787098" />
+
+This scatter plot visualizes the relationship between Age (x-axis) and BloodPressure (y-axis, diastolic blood pressure), with points colored by Outcome (0 = non-diabetic, 1 = diabetic).
+
+Key Observations
+1. Relationship Between Age and Blood Pressure
+
+There is a weak positive correlation between Age and BloodPressure.
+While older individuals tend to show slightly higher blood pressure on average, the pattern is highly scattered and inconsistent.
+
+2. Weak Class Separability
+
+Compared to features such as Glucose or Insulin, this plot shows very weak separability between diabetic and non-diabetic groups.
+Blue and orange points extensively overlap across almost the entire range.
+
+3. Blood Pressure Distribution
+
+Most data points from both classes fall within the 60–80 range.
+
+Very low (<50) and very high (>90 or 100) blood pressure values appear in both classes.
+
+No near-zero values are present, suggesting missing-value placeholders (often zeros) were removed or corrected prior to plotting.
+
+4. Age Does Not Improve Separation
+
+Even at older ages, both diabetic and non-diabetic points remain highly mixed.
+Age alone does not create a meaningful boundary for distinguishing between the two outcomes.
+
+Conclusion and Modeling Impact
+
+Weak predictive power: BloodPressure alone, or even combined with Age, is not a strong predictor of diabetes in this dataset.
+
+Low model weight: Machine learning models will likely assign low importance to this feature compared to strong metabolic predictors like Glucose and Insulin.
+
+Interpretation: Diastolic blood pressure in this dataset appears to be only weakly associated with diabetes diagnosis.
+
