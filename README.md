@@ -330,3 +330,27 @@ Conclusion
 
 This clear difference confirms that Glucose is a strong predictive feature for diabetes in this dataset.
 These findings are also consistent with earlier visualizations such as the Glucose KDE plot, where the distribution for diabetic patients shifted noticeably toward higher values.
+
+Analysis of Average BMI by Outcome
+
+<img width="638" height="448" alt="Screenshot 2025-12-01 143749" src="https://github.com/user-attachments/assets/c5135ccc-8257-4c28-951d-9ba6031414a8" />
+
+This bar plot compares the average Body Mass Index (BMI) between diabetic and non-diabetic patients. It provides a quantitative perspective on how obesity correlates with diabetes in the Pima Indians Diabetes dataset.
+
+Key Observations
+
+Average BMI for Non-Diabetic patients (Outcome = 0):
+Approximately 30.5, which falls within the overweight to Class I obesity range.
+
+Average BMI for Diabetic patients (Outcome = 1):
+Approximately 35, corresponding to Class II obesity in medical classification.
+
+Clear difference between the two groups:
+Diabetic individuals have, on average, about 4.5 units higher BMI than non-diabetic individuals.
+
+Conclusion
+
+This visualization clearly confirms the strong link between higher BMI and increased likelihood of diabetes in this dataset.
+These findings align with previous visual analyses, such as the BMI KDE plot, where the distribution for diabetic patients was shifted toward higher BMI values.
+
+
