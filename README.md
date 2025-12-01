@@ -541,3 +541,42 @@ Low model weight: Machine learning models will likely assign low importance to t
 
 Interpretation: Diastolic blood pressure in this dataset appears to be only weakly associated with diabetes diagnosis.
 
+Analysis of Mean Glucose Level by Diabetes Outcome
+
+<img width="675" height="425" alt="Screenshot 2025-12-01 211233" src="https://github.com/user-attachments/assets/d8a4afc0-9221-4dd9-8be3-ac56fdced606" />
+
+This is a simple bar plot that compares the mean value of the Glucose feature across the two categories of the target variable Outcome, providing clear and quantitative insights.
+
+1. Nature of the Chart & Key Variables
+
+Feature analyzed: Mean Glucose level
+
+Grouping: Based on the target variable (Outcome):
+
+Outcome 0: Non-diabetic patients
+
+Outcome 1: Diabetic patients
+
+Y-axis: Mean Glucose value
+
+2. Key Observations (Quantitative Results)
+
+Mean Glucose for Outcome 0 (Non-Diabetic): 110.6
+
+Mean Glucose for Outcome 1 (Diabetic): 142.3
+
+Difference: A clear and significant gap of 31.7 units between the two groups
+
+This difference highlights a strong relationship between glucose levels and diabetes diagnosis.
+
+3. Conclusion & Relevance for Modeling
+
+Strong predictive indicator:
+The chart quantitatively confirms that Glucose is the strongest discriminative feature in this dataset.
+
+Aligned with earlier EDA:
+This observation is consistent with the Glucose KDE plot, where the diabetic group showed a noticeable shift toward higher values.
+
+Modeling importance:
+Machine learning models are expected to assign high importance to this feature, given the strong difference in group means.
+
