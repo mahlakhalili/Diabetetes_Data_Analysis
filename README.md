@@ -381,3 +381,41 @@ Insulin resistance
 Hyperinsulinemia
 These factors are commonly associated with or precede Type 2 diabetes, supporting the significance of this feature in further modeling and analysis.
 
+Scatter Plot Analysis: Glucose vs. BMI by Outcome
+
+<img width="811" height="521" alt="Screenshot 2025-12-01 182712" src="https://github.com/user-attachments/assets/50719648-254b-4b45-9341-e80a6e70736a" />
+
+This scatter plot visualizes the relationship between Glucose (blood sugar level) and BMI (Body Mass Index), with points color-coded based on the target variable Outcome (0 = Non-Diabetic, 1 = Diabetic).
+It provides valuable insight into how the combination of these two features contributes to diabetes prediction.
+
+Key Observations
+
+Non-Diabetic Group (Outcome = 0 , Blue):
+Most blue points appear in the lower-left region, indicating lower BMI and lower glucose levels.
+
+Diabetic Group (Outcome = 1 , Orange):
+Orange points are more concentrated in the upper-right region, reflecting higher BMI and higher glucose levels.
+
+Overlap Region:
+A noticeable overlap exists between Glucose levels of 90–140 and BMI levels of 25–35.
+This suggests that neither feature alone perfectly separates the two classes.
+
+Combined Separability
+
+Low-Risk Zone:
+Glucose < 100 and BMI < 25 → Almost all points are blue (very low diabetes risk).
+
+High-Risk Zone:
+Glucose > 150 and BMI > 35 → Orange points dominate (high diabetes risk).
+
+Conclusion
+
+Positive Correlation:
+Higher BMI tends to be associated with higher glucose levels.
+
+Strong Combined Predictive Power:
+Together, these features help machine learning models draw a meaningful decision boundary between classes.
+
+Feature Engineering Potential:
+This visualization suggests the possibility of creating new engineered features, such as a combined metabolic risk index, to enhance model performance.
+
