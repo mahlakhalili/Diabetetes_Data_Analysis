@@ -448,3 +448,30 @@ Modeling use: Consider modeling interaction terms (e.g., Age * Glucose) or age-s
 
 Practical suggestion: Use the scatter insights to engineer features or to set stratified decision thresholds in downstream models.
 
+Scatter Plot: BMI vs Age (Colored by Outcome)
+
+<img width="684" height="520" alt="Screenshot 2025-12-01 194211" src="https://github.com/user-attachments/assets/6e5be2e0-5bc9-4011-bee6-8fb2ee4dd9b4" />
+
+This chart visualizes the relationship between Age (x-axis) and BMI (y-axis), with points colored based on Outcome (0 = non-diabetic, 1 = diabetic). The plot helps identify how the combination of age and body mass index relates to the likelihood of diabetes.
+
+Key Insights
+
+Age Effect:
+Younger individuals (20–30 years) mostly fall into the non-diabetic class, especially at lower BMI values.
+As age increases—particularly above 40—the density of diabetic cases rises across almost all BMI ranges.
+
+BMI Effect:
+Higher BMI values (35+) show a noticeably larger concentration of diabetic cases.
+Lower BMI values (<25) are strongly associated with non-diabetic outcomes across all ages.
+
+Combined Risk Pattern:
+
+Low-risk zone: Age < 40 and BMI < 25 — mostly non-diabetic.
+
+High-risk zone: Age > 45 and BMI > 35 — high concentration of diabetic cases.
+
+Overlap zone: Age 20–40 with BMI 25–35 — significant overlap between both classes, indicating limited separability using these two features alone.
+
+Conclusion
+
+There is no strong linear correlation between Age and BMI, but both variables independently contribute to diabetes risk. Their combined interaction strengthens the predictive signal, making them valuable inputs for machine learning models. However, for better class separation, additional metabolic features (e.g., Glucose, Insulin) are necessary.
