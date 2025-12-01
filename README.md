@@ -625,3 +625,41 @@ Ratio ≈ 500:268 (~65% to 35%) indicates a moderate imbalance in class distribu
 Models trained on this dataset should consider class imbalance to avoid bias toward the majority class.
 
 Techniques such as resampling (oversampling/undersampling) or class-weight adjustments may help improve predictive performance for the minority class.
+
+📊Analysis of Average BMI by Diabetes Outcome
+
+<img width="666" height="427" alt="Screenshot 2025-12-01 221440" src="https://github.com/user-attachments/assets/37cf206d-1b39-4ac9-93c1-668b7377fe04" />
+
+This chart is a bar plot that compares the average BMI (Body Mass Index) across the target variable Outcome (diabetes diagnosis).
+
+1. Nature of the Chart & Feature
+
+Feature analyzed: Average BMI for each group
+
+Grouping by Outcome:
+
+Outcome 0: Non-diabetic patients
+
+Outcome 1: Diabetic patients
+
+Y-axis: Average BMI
+
+2. Key Observations & Numerical Insights
+
+Average BMI for Outcome 0 (Non-diabetic): ≈ 30.5
+
+Average BMI for Outcome 1 (Diabetic): ≈ 35
+
+Significant difference: There is a noticeable difference of ~4.5 units in average BMI between the two groups
+
+3. Conclusion & Modeling Implications
+
+Confirms Obesity as a Risk Factor:
+
+Diabetic individuals in this dataset have, on average, a higher BMI
+
+Medically, this corresponds to Class I and II obesity
+
+Modeling:
+
+BMI can be an important feature in diabetes prediction models, as it provides a clear quantitative distinction between diabetic and non-diabetic patients
