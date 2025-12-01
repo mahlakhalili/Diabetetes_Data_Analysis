@@ -308,3 +308,25 @@ Outcome = 1 (Diabetic): ~268 samples
 Total observations: ~768
 
 This means that the non-diabetic class has almost twice as many samples as the diabetic class.
+
+Analysis of Average Glucose by Outcome
+
+<img width="661" height="441" alt="Screenshot 2025-12-01 142537" src="https://github.com/user-attachments/assets/33fef361-f505-4299-a7ce-495be22d8783" />
+
+This visualization examines the average blood glucose level (Glucose) across two groups of patients: diabetic and non-diabetic. A bar chart was used to illustrate the mean Glucose value for each outcome class.
+
+Key Observations
+
+Average Glucose for Non-Diabetic patients (Outcome = 0):
+Approximately 110.
+
+Average Glucose for Diabetic patients (Outcome = 1):
+Approximately 141.
+
+Significant difference between the two groups:
+On average, diabetic individuals have 31 units higher glucose levels compared to non-diabetic individuals.
+
+Conclusion
+
+This clear difference confirms that Glucose is a strong predictive feature for diabetes in this dataset.
+These findings are also consistent with earlier visualizations such as the Glucose KDE plot, where the distribution for diabetic patients shifted noticeably toward higher values.
