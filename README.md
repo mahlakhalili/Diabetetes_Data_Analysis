@@ -475,3 +475,30 @@ Overlap zone: Age 20–40 with BMI 25–35 — significant overlap between both 
 Conclusion
 
 There is no strong linear correlation between Age and BMI, but both variables independently contribute to diabetes risk. Their combined interaction strengthens the predictive signal, making them valuable inputs for machine learning models. However, for better class separation, additional metabolic features (e.g., Glucose, Insulin) are necessary.
+
+Scatter Plot: Insulin vs Glucose (Colored by Outcome)
+
+<img width="825" height="533" alt="Screenshot 2025-12-01 195133" src="https://github.com/user-attachments/assets/c37b863d-af4d-47f0-9dd8-c4f63526bebd" />
+
+This scatter plot visualizes the relationship between Glucose (x-axis) and Insulin (y-axis), with points colored based on the Outcome variable (0 = non-diabetic, 1 = diabetic). Since both features are strong predictors of diabetes, this plot is one of the most important bivariate analyses in the dataset.
+
+Key Observations
+
+Strong Positive Correlation:
+There is a clear positive correlation between glucose levels and insulin levels. As glucose increases, insulin tends to rise in both diabetic and non-diabetic groups.
+
+High Class Separability:
+The distinction between the two outcome classes is much clearer here than in many other feature pairs.
+
+Low-risk region: Glucose < 100 and Insulin < 100 are predominantly non-diabetic.
+
+High-risk region: Glucose > 150 and Insulin > 200 show a strong dominance of diabetic cases.
+
+Overlap zone: Glucose 100–150 and Insulin 100–200 display mixed points, indicating cases that require additional diagnostic information.
+
+Note on Zero Values:
+Insulin values of zero often indicate missing data in the original dataset. The low density near y = 0 suggests such values were either removed or imputed before plotting.
+
+Conclusion
+
+The combination of Glucose and Insulin provides one of the strongest two-dimensional separations in the dataset. A machine learning model can form an effective decision boundary using only these two features, and they are expected to carry significant weight in predictive models for diabetes.
